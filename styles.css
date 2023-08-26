@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: #fff;
+    color: white;
+    animation: fadeIn 0.2s ease-in-out;
 }
 
 header {
@@ -86,6 +87,15 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     font-size: larger;
+    border: #ce532a solid 1px;
+    padding: 20px;
+    transition: border 0.3s, transform 0.3s;
+
+}
+
+p:hover {
+    border: whitesmoke solid 1.5px;
+    transform: scale(1.03);
 }
 
 h2, h3, h4, h5, h6 {
@@ -252,5 +262,77 @@ main {
     opacity: 1;
   }
   
+  .custom-link {
+    color: blue;
+  }
 
-  
+  .custom-link:hover {
+    color: lightskyblue; 
+  }
+
+  .login-form {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 8%;
+    margin-bottom: 10%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.form-group {
+    margin-bottom: 15px;
+
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ce532a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: blue;;
+}
+
+.login {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.registration-form {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);            
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

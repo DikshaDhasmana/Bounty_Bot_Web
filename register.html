@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="\favicon.png">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Bounty Bot: Register</title>
+</head>
+<body>
+    <center><h2 class="login">Register</h2>
+    <div class="registration-form">
+        <form action="process_registration.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Choose a password" required>
+            </div>
+            <button type="submit">Register</button>
+            <br></br>
+            <a href="/login.html" class = "custom-link"><small>Login to your account.</small></a>
+        </form>
+    </div>
+</body>
+</html>
